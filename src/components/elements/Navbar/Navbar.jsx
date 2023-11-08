@@ -1,7 +1,7 @@
 import { useRef } from 'react';
 import { AiOutlineClose } from 'react-icons/ai';
 import { RxHamburgerMenu } from 'react-icons/rx'
-import logo from '../../../assets/images/csea-logo.png';
+import { CSEALogo } from '../../../assets';
 import { navLinks } from '../../../constants';
 import styles from './Navbar.module.css';
 
@@ -15,7 +15,7 @@ function Navbar() {
     return (
         <header className={styles.navbar}>
             <h3 onClick={() => { window.scrollTo(0, 0) }}>
-                <img src={logo} alt='logo' className={styles.nav_logo} />
+                <img src={CSEALogo} alt='logo' className={styles.nav_logo} />
             </h3>
             <nav ref={navRef}>
                 {navLinks.map((link) => (

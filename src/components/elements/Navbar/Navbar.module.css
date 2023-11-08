@@ -11,7 +11,6 @@ header {
 }
 
 .navbar {
-    font-family: 'Titillium Web', sans-serif;
     font-weight: 400;
     position: relative;
     top: 0%;
@@ -26,16 +25,17 @@ header {
 }
 
 nav a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
     margin: 0 2rem;
     color: white;
     text-decoration: none;
     font-size: 1.35rem;
-    font-weight: 700;
     color: black;
 }
 
 nav a:hover {
-    color: #17a2b8;
+    color: #7678ed;
     transition: all 0.5s;
 }
 

@@ -1,4 +1,205 @@
 .container {
-    padding: 15rem 0;
-    background-color: #17a2b8;
+    padding: 4rem;
+    background-color: #7678ed;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_text {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    color: #fff;
+    font-weight: 400;
+    font-family: 'Edu TAS Beginner', cursive;
+}
+
+.header_img {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+.header_text h3 {
+    font-size: 4.5rem;
+    letter-spacing: 2px;
+}
+
+.header_text h2 {
+    font-size: 2rem;
+    margin: 1.5rem 0;
+    letter-spacing: 2.5px;
+}
+
+.header, .header_text, .header_text h3,
+.header_text h2, .header_img {
+    background-color: #7678ed;
+}
+
+.header_img img {
+    background-color: #7678ed;
+    width: 80%;
+}
+
+.about_wrapper {
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    padding: 3.5rem;
+    display: flex;
+}
+
+.about_title {
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+}
+
+.about_title p:nth-child(1) {
+    font-size: 1.45rem;
+    text-transform: uppercase;
+    color: #7678ed;
+    margin: 1rem 0;
+}
+
+.about_title p:nth-child(2) {
+    width: 2rem;
+    height: 2px;
+    background-color: #7678ed;
+    margin-left: 0.5rem;
+}
+
+.about_csea {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    font-family: 'Edu TAS Beginner', cursive;
+    font-weight: 500;
+    color: rgb(43, 44, 90);
+}
+
+.about_desc {
+    letter-spacing: 2px;
+    line-height: 25px;
+}
+
+.about_list {
+    list-style: none;
+    margin-top: 1.5rem;
+    width: fit-content;
+}
+
+.about_list li {
+    color: #7678ed;
+    line-height: 40px;
+    font-size: 1.5rem;
+    border-top: 1px solid grey;
+    cursor:default
+}
+
+.about_list li:hover {
+    color: #36376e;
+    transition: all 1s;
+}
+
+.about_list li:last-child {
+    border-bottom: 1px solid grey;
+}
+
+.about_list span {
+    color: black;
+    margin-left: 0.5rem;
+    font-size: 1rem;
+}
+
+.about_left {
+    flex: 0.75;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_right {
+    flex: 1;
+}
+
+.about_left img {
+    width: 65%;
+}
+
+.about_right button {
+    margin-top: 1.5rem;
+    padding: 1rem 3rem;
+    border-radius: 50px;
+    background-color: #7678ed;
+    color: white;
+    outline: none;
+    border: none;
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+
+.about_right button:hover {
+    background-color: #4b4da3;
+    transition: all 300ms;
+}
+
+@media only screen and (max-width: 1150px) {
+    .header_text h3 {
+        font-size: 3.5rem;
+    }
+
+    .header_text h2 {
+        font-size: 1.75rem;
+    }
+}
+
+@media only screen and (max-width: 930px) {
+    .header_text h3 {
+        font-size: 2.75rem;
+    }
+
+    .header_text h2 {
+        font-size: 1.25rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .header_text {
+        margin-bottom: 1.5rem;
+    }
+
+    .header_text h3 {
+        font-size: 4rem;
+    }
+
+    .header_text h2 {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 590px) {
+    .header_text h3 {
+        font-size: 3rem;
+    }
+
+    .header_text h2 {
+        font-size: 1.65rem;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .header_text h3 {
+        font-size: 2.35rem;
+    }
+
+    .header_text h2 {
+        font-size: 1.25rem;
+    }
 }
