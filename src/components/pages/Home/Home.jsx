@@ -1,7 +1,8 @@
 import styles from './Home.module.css';
-import { Interview, CSEALogo } from '../../../assets';
 import { motion } from 'framer-motion';
 import { TiTick } from 'react-icons/ti';
+import { Interview, CSEALogo } from '../../../assets';
+import { getStartedCards } from '../../../constants';
 
 const Header = () => {
   return (
@@ -23,7 +24,7 @@ const About = () => {
     <div className={styles.about_wrapper}>
       <div className={styles.about_left}>
         <motion.img animate={{ y: [0, 50, 0] }}
-          transition={{ duration: 2.5, repeat: Infinity, repeatType: 'loop', ease:'easeInOut' }} src={CSEALogo} alt='Home page Logo' />
+          transition={{ duration: 2.5, repeat: Infinity, repeatType: 'loop', ease: 'easeInOut' }} src={CSEALogo} alt='Home page Logo' />
       </div>
       <div className={styles.about_right}>
         <div className={styles.about_titles}>
@@ -43,6 +44,36 @@ const About = () => {
         <button>Learn More</button>
       </div>
     </div>
+  );
+}
+
+const GetStarted = () => {
+  return (
+    <div className={styles.getStarted_container}>
+      <div className={styles.getStarted_titles}>
+        <div className={styles.getStarted_title}>
+          <p></p>
+          <p>&nbsp;Come On!&nbsp;</p>
+        </div>
+        <h3>Let's get started!</h3>
+      </div>
+      <div className={styles.getStarted_cards}>
+        {getStartedCards.map((card, index) => (
+          <motion.div className={styles.getStarted_card} whileHover={{ y: -50 }} key={index}>
+            <div className={styles.getStarted_img}>
+              <img src={card.image} alt={card.title} />
+            </div>
+            <div className={styles.getStarted_card_desc}>
+              <h3>{card.title}</h3>
+              <p>{card.description}</p>
+              <div lassName={styles.getStarted_card_btn}>
+                <button>Expore</button>
+              </div>
+            </div>
+          </motion.div>
+        ))}
+      </div>
+    </div>
   )
 }
 
@@ -53,6 +84,7 @@ function Home() {
         <Header />
       </div>
       <About />
+      <GetStarted />
     </div>
   )
 }
