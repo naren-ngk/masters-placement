@@ -1,4 +1,7 @@
 import { Prepartion, InterviewLogo, Expereince } from '../assets';
+import { FiInstagram } from "react-icons/fi";
+import { FaFacebookF } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa6";
 
 export const navLinks = [
     {
@@ -44,3 +47,21 @@ export const getStartedCards = [
         image: Expereince
     },
 ];
+
+export const footerCards = {
+    footerSocialMedia: [
+        { name: 'Facebook', link: 'https://www.facebook.com/csea.ceg', icon: FaFacebookF },
+        { name: 'Instagram', link: 'https://www.instagram.com/csea_ceg/', icon: FiInstagram },
+        { name: 'Linkedin', link: 'https://www.linkedin.com/company/csea-ceg/mycompany/', icon: FaLinkedinIn }
+    ],
+    footerGetInTouch: [
+        { name: 'Saran T', phno: '+91 96005 44132' },
+        { name: 'Sruthi Murali', phno: '+91 80562 84967' },
+    ],
+    footerLinks: [
+        { name: 'About Us', link: 'about' },
+        { name: 'Preparation Tips', link: 'tips' },
+        { name: 'Interview Expereince', link: 'experience' },
+        { name: 'FAQ', link: 'faq' },
+    ]
+}

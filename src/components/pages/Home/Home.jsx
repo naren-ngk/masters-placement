@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { TiTick } from 'react-icons/ti';
 import { Interview, CSEALogo } from '../../../assets';
 import { getStartedCards } from '../../../constants';
+import { Footer } from '../../elements';
 
 const Header = () => {
   return (
@@ -67,7 +68,7 @@ const GetStarted = () => {
               <h3>{card.title}</h3>
               <p>{card.description}</p>
               <div lassName={styles.getStarted_card_btn}>
-                <button>Expore</button>
+                <button>Explore</button>
               </div>
             </div>
           </motion.div>
@@ -85,6 +86,7 @@ function Home() {
       </div>
       <About />
       <GetStarted />
+      <Footer />
     </div>
   )
 }
