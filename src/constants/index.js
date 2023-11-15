@@ -48,6 +48,29 @@ export const getStartedCards = [
     },
 ];
 
+export const AccordionCards = [
+    {
+        id: '1',
+        label: "Which programming language should I use?",
+        content: "Companies typically give you the option of choosing your preferred programming language, in which case you can do so. If you list a language on your resume, your interviewer can ask you a question about it. As a result, keep that in mind! Make it clear on your resume if you aren't completely confident in a language. Put less-stronger languages under a heading like 'Working Knowledge' or give them a star ranking."
+    },
+    {
+        id: '2',
+        label: "What if I draw a blank and can't answer a question?",
+        content: "It is ok to not know. The interview process mainly tests the thinking process/ logical ability rather than providing correct answers. If you are struck, ask your interviewer for help or hint. Don't give up!"
+    },
+    {
+        id: '3',
+        label: "How should I behave in a face to face interview?",
+        content: "Give a firm handshake after entering and greet the interviewers. Be friendly and respectful. Don't argue with the interviewer. Be confident and drive your own interview."
+    },
+    {
+        id: '4',
+        label: "What should I wear for the interview?",
+        content: "Wear neat and formal dress. Avoid using bright colours."
+    },
+];
+
 export const footerCards = {
     footerSocialMedia: [
         { name: 'Facebook', link: 'https://www.facebook.com/csea.ceg', icon: FaFacebookF },

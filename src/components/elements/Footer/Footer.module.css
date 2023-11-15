@@ -31,7 +31,7 @@
     border-radius: 50%;
     color: #c9ada7;
     text-align: center;
-    
+
 }
 
 .footer_icon:hover svg, .footer_icon:hover {
@@ -54,7 +54,7 @@
 .email h3, .email a, .phno h3, .phno p, .links p {
     color: white;
     margin: 1rem 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Nunito', sans-serif;
 }
 
 .email h3, .phno h3 {
@@ -71,7 +71,7 @@
     text-decoration: underline;
 }
 
-.email a, .phno p , .links p{
+.email a, .phno p, .links p {
     margin-left: 1.5rem;
     font-size: 1.15rem;
     letter-spacing: 1.2px;
@@ -110,7 +110,7 @@
     color: white;
     font-weight: 500;
     padding: 2rem 0 0 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Nunito', sans-serif;
     letter-spacing: 1.2px;
 }
 

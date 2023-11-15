@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { TiTick } from 'react-icons/ti';
 import { Interview, CSEALogo } from '../../../assets';
 import { getStartedCards } from '../../../constants';
-import { Footer } from '../../elements';
+import { Footer, Accordion } from '../../elements';
 
 const Header = () => {
   return (
@@ -52,10 +52,9 @@ const GetStarted = () => {
   return (
     <div className={styles.getStarted_container}>
       <div className={styles.getStarted_titles}>
-        <div className={styles.getStarted_title}>
-          <p></p>
-          <p>&nbsp;Come On!&nbsp;</p>
-        </div>
+      <div className={styles.getStarted_title}>
+                    <p><span></span>&nbsp;Come on!&nbsp;<span></span></p>
+                </div>
         <h3>Let's get started!</h3>
       </div>
       <div className={styles.getStarted_cards}>
@@ -86,9 +85,10 @@ function Home() {
       </div>
       <About />
       <GetStarted />
+      <Accordion />
       <Footer />
     </div>
-  )
+  );
 }
 
 export default Home;
