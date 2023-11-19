@@ -1,9 +1,10 @@
 import styles from './Home.module.css';
 import { motion } from 'framer-motion';
 import { TiTick } from 'react-icons/ti';
-import { Interview, CSEALogo } from '../../../assets';
-import { getStartedCards } from '../../../constants';
+import { FaLinkedinIn } from "react-icons/fa6";
+import { getStartedCards, PracticeCards, designersCards } from '../../../constants';
 import { Footer, Accordion } from '../../elements';
+import { Interview, CSEALogo } from '../../../assets';
 
 const Header = () => {
   return (
@@ -52,9 +53,9 @@ const GetStarted = () => {
   return (
     <div className={styles.getStarted_container}>
       <div className={styles.getStarted_titles}>
-      <div className={styles.getStarted_title}>
-                    <p><span></span>&nbsp;Come on!&nbsp;<span></span></p>
-                </div>
+        <div className={styles.getStarted_title}>
+          <p><span></span>&nbsp;Come on!&nbsp;<span></span></p>
+        </div>
         <h3>Let's get started!</h3>
       </div>
       <div className={styles.getStarted_cards}>
@@ -77,6 +78,43 @@ const GetStarted = () => {
   )
 }
 
+const Practice = () => {
+  return (
+    <div className={styles.practiceSection}>
+      <h3>Practice Websites</h3>
+      <div className={styles.practiceWrapper}>
+        {PracticeCards.map((card, index) => (
+          <div key={index} className={styles.practiceTile}>
+            <motion.img src={card.image} alt={card.name} whileHover={{ scale: 1.2 }} />
+          </div>
+        ))}
+      </div>
+    </div>
+  )
+}
+
+const Designers = () => {
+  return (
+    <div className={styles.designers_container}>
+      <div className={styles.designers_titles}>
+        <div className={styles.designers_title}>
+          <p><span></span>&nbsp;The team&nbsp;<span></span></p>
+        </div>
+        <h3>Designed and Developed by</h3>
+      </div>
+      <div className={styles.designers_content}>
+        {designersCards.map((card, index) => (
+          <div className={styles.designers_card} key={index}>
+            <h3>{card.name}</h3>
+            <h4>{card.year}</h4>
+            <button><FaLinkedinIn /></button>
+          </div>
+        ))}
+      </div>
+    </div>
+  )
+}
+
 function Home() {
   return (
     <div>
@@ -86,6 +124,8 @@ function Home() {
       <About />
       <GetStarted />
       <Accordion />
+      <Practice />
+      <Designers />
       <Footer />
     </div>
   );

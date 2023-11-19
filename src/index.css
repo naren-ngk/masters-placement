@@ -6,3 +6,8 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+::selection {
+    background-color: #7678ed7d;
+    color: white;
+}

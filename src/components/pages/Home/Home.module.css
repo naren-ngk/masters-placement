@@ -152,7 +152,7 @@
     padding: 3rem;
 }
 
-.getStarted_titles {
+.getStarted_titles, .designers_titles {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -161,7 +161,7 @@
     margin-bottom: 3rem;
 }
 
-.getStarted_title {
+.getStarted_title, .designers_title {
     font-family: 'Nunito', sans-serif;
     position: relative;
     display: flex;
@@ -170,7 +170,7 @@
     align-items: center;
 }
 
-.getStarted_title p {
+.getStarted_title p, .designers_title p {
     font-size: 1.5rem;
     text-transform: uppercase;
     color: #7678ed;
@@ -179,18 +179,18 @@
     align-items: center;
 }
 
-.getStarted_title p span {
+.getStarted_title p span, .designers_title p span {
     display: inline-block;
     width: 5rem;
     height: 2px;
     background-color: #7678ed;
 }
 
-.getStarted_titles h3 {
+.getStarted_titles h3, .designers_titles h3 {
     margin-top: 1rem;
     font-size: 2.25rem;
     font-family: 'Edu TAS Beginner', cursive;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .getStarted_cards {
@@ -260,6 +260,100 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
+}
+
+.practiceSection {
+    padding: 2rem 2rem 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.practiceWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.practiceSection h3 {
+    font-family: 'Edu TAS Beginner', cursive;
+    font-weight: 500;
+    font-size: 2.5rem;
+    margin: 1.5rem 0;
+}
+
+.practiceTile {
+    height: 9rem;
+    padding: 1.1em;
+    width: 20%;
+    border: 1px solid rgba(128, 128, 128, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.practiceTile img {
+    width: 80%;
+    cursor: pointer;
+    justify-self: center;
+}
+
+.designers_container {
+    padding: 3rem 3rem 4rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.designers_content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.designers_card {
+    width: 25%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.designers_card h3 {
+    font-family: 'Edu TAS Beginner', cursive;
+    font-weight: 500;
+    font-size: 2rem;
+    margin: 0.75rem 0;
+    color: #5b5db6;
+}
+
+.designers_card h4 {
+    font-family: 'Nunito', sans-serif;
+    color: grey;
+    margin-bottom: 0.75rem;
+}
+
+.designers_card button {
+    padding: 0.75rem;
+    outline: none;
+    border: 2px solid #7678ed;
+    color: #5b5db6;
+    background-color: transparent;
+    border-radius: 50%;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.designers_card button:hover {
+    background-color: #7678ed;
+    color: #fff;
+    transition: all 500ms;
 }
 
 @media only screen and (max-width: 1150px) {

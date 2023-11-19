@@ -1,4 +1,7 @@
-import { Prepartion, InterviewLogo, Expereince } from '../assets';
+import {
+    Prepartion, InterviewLogo, Expereince,
+    Leetcode, GFG, CC, Hackerrank,
+} from '../assets';
 import { FiInstagram } from "react-icons/fi";
 import { FaFacebookF } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa6";
@@ -88,3 +91,20 @@ export const footerCards = {
         { name: 'FAQ', link: 'faq' },
     ]
 }
+
+export const PracticeCards = [
+    { name: 'GeeksForGeeks', image: GFG, link: '' },
+    { name: 'LeetCode', image: Leetcode, link: '' },
+    { name: 'Hackerrank', image: Hackerrank, link: '' },
+    { name: 'CodeChefs', image: CC, link: '' },
+];
+
+export const designersCards = [
+    { name: 'Person 1', year: '2018 - 2022', link: '' },
+    { name: 'Person 2', year: '2018 - 2022', link: '' },
+    { name: 'Person 3', year: '2018 - 2022', link: '' },
+    { name: 'Person 4', year: '2018 - 2022', link: '' },
+    { name: 'Person 5', year: '2018 - 2022', link: '' },
+    { name: 'Person 6', year: '2020 - 2024', link: '' },
+    { name: 'Person 7', year: '2020 - 2024', link: '' },
+];
