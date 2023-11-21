@@ -18,8 +18,8 @@ function Navbar() {
                 <img src={CSEALogo} alt='logo' className={styles.nav_logo} />
             </h3>
             <nav ref={navRef}>
-                {navLinks.map((link) => (
-                    <a href={`#${link.id}`} onClick={showNavBar}>{link.title}</a>
+                {navLinks.map((link, index) => (
+                    <a href={`#${link.id}`} onClick={showNavBar} key={index}>{link.title}</a>
                 ))}
                 <button onClick={showNavBar} className={styles.nav_close}>
                     <p><AiOutlineClose /></p>

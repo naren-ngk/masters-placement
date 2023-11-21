@@ -92,6 +92,44 @@ export const footerCards = {
     ]
 }
 
+export const timelineCards = [
+    {
+        id: 1,
+        title: 'Clarify the problem statement:',
+        content: 'Before attempting to solve a problem, it is important to understand the problem clearly. Hence it is important to ask right questions.'
+    },
+    {
+        id: 2,
+        title: 'Constraints:',
+        content: 'If there is a clear understanding of the problem statement, the next step is to determine whether there are any specific constraints that must be followed.'
+    },
+    {
+        id: 3,
+        title: 'Observations:',
+        content: "Every problem has a peculiar behaviour associated with it. So don't forget to tell the interviewer about all of the observations of that problem."
+    },
+    {
+        id: 4,
+        title: 'Approaches:',
+        content: "This is the most crucial part in the entire interview process. If you intend to solve the problem with a data structure, explain why you want to do so. If you're stuck, use the brute force method."
+    },
+    {
+        id: 5,
+        title: 'Discuss your approach:',
+        content: "When you've narrowed down your plan and believe you have a solution, talk to the interviewer about it. Accept if the interviewer proposes something new and begin thinking along those lines. Don't be too rigid in your thinking."
+    },
+    {
+        id: 6,
+        title: 'Edge Cases and counter examples:',
+        content: "If the solution for the problem is decided, make sure to test it for all possible edge-cases."
+    },
+    {
+        id: 7,
+        title: 'Writing the Code:',
+        content: "Make sure to check the following: a. The code should be readable and understandable. b. Add comments to your code. c. Before showing the code to the interviewer, dry run it with a few examples"
+    },
+];
+
 export const PracticeCards = [
     { name: 'GeeksForGeeks', image: GFG, link: '' },
     { name: 'LeetCode', image: Leetcode, link: '' },

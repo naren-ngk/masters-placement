@@ -152,7 +152,7 @@
     padding: 3rem;
 }
 
-.getStarted_titles, .designers_titles {
+.getStarted_titles, .designers_titles, .coding_titles {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -161,7 +161,7 @@
     margin-bottom: 3rem;
 }
 
-.getStarted_title, .designers_title {
+.getStarted_title, .designers_title, .coding_title {
     font-family: 'Nunito', sans-serif;
     position: relative;
     display: flex;
@@ -170,7 +170,7 @@
     align-items: center;
 }
 
-.getStarted_title p, .designers_title p {
+.getStarted_title p, .designers_title p, .coding_title p {
     font-size: 1.5rem;
     text-transform: uppercase;
     color: #7678ed;
@@ -179,14 +179,14 @@
     align-items: center;
 }
 
-.getStarted_title p span, .designers_title p span {
+.getStarted_title p span, .designers_title p span, .coding_title p span {
     display: inline-block;
     width: 5rem;
     height: 2px;
     background-color: #7678ed;
 }
 
-.getStarted_titles h3, .designers_titles h3 {
+.getStarted_titles h3, .designers_titles h3, .coding_titles h3 {
     margin-top: 1rem;
     font-size: 2.25rem;
     font-family: 'Edu TAS Beginner', cursive;
@@ -260,6 +260,14 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
+}
+
+.coding_container {
+    padding: 2rem 2rem 4rem 2rem;
+}
+
+.coding_timeline {
+    margin-top: 1.5rem;
 }
 
 .practiceSection {

@@ -1,0 +1,13 @@
+.container h3 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.container p {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.15rem;
+    letter-spacing: 1px;
+    font-weight: 300;
+}

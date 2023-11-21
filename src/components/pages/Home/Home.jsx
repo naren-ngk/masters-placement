@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { TiTick } from 'react-icons/ti';
 import { FaLinkedinIn } from "react-icons/fa6";
 import { getStartedCards, PracticeCards, designersCards } from '../../../constants';
-import { Footer, Accordion } from '../../elements';
+import { Footer, Accordion, Timeline } from '../../elements';
 import { Interview, CSEALogo } from '../../../assets';
 
 const Header = () => {
@@ -75,7 +75,7 @@ const GetStarted = () => {
         ))}
       </div>
     </div>
-  )
+  );
 }
 
 const Practice = () => {
@@ -90,7 +90,23 @@ const Practice = () => {
         ))}
       </div>
     </div>
-  )
+  );
+}
+
+const CodingQuest = () => {
+  return (
+    <div className={styles.coding_container}>
+      <div className={styles.coding_titles}>
+        <div className={styles.coding_title}>
+          <p><span></span>&nbsp;TO KEEP IN MIND&nbsp;<span></span></p>
+        </div>
+        <h3>How to answer a coding question in an Interview?</h3>
+      </div>
+      <div className={styles.coding_timeline}>
+        <Timeline />
+      </div>
+    </div>
+  );
 }
 
 const Designers = () => {
@@ -112,7 +128,7 @@ const Designers = () => {
         ))}
       </div>
     </div>
-  )
+  );
 }
 
 function Home() {
@@ -123,6 +139,7 @@ function Home() {
       </div>
       <About />
       <GetStarted />
+      <CodingQuest />
       <Accordion />
       <Practice />
       <Designers />
